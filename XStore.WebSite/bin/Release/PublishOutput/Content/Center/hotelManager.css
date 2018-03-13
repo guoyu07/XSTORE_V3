@@ -1,0 +1,122 @@
+.personalInfo {
+  width: 94%;
+  padding: 3%; }
+  .personalInfo .headPortrait {
+    text-align: center;
+    width: 80px;
+    font: 40px/80px "microsoft yahei";
+    color: #fff;
+    border-radius: 50%; }
+  .personalInfo .positinInfo {
+    margin-left: 10px;
+    width: calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+    width: -moz-calc(100% - 90px); }
+    .personalInfo .positinInfo .market {
+      font: 16px/40px "microsoft yahei";
+      color: #000;
+      height: 80px;
+      width: 40%;
+      text-align: center; }
+      .personalInfo .positinInfo .market .job {
+        font: 14px/40px "microsoft yahei";
+        color: #333; }
+    .personalInfo .positinInfo .area {
+      margin-top: 20px;
+      margin-left: 3%;
+      font: 14px/20px "microsoft yahei";
+      color: #666;
+      height: 40px;
+      width: 57%;
+      text-align: center; }
+  .personalInfo .headBottom {
+    float: left;
+    margin-top: 10px;
+    width: 100%; }
+    .personalInfo .headBottom p.status {
+      width: 80px;
+      text-align: center;
+      font: 14px/20px "microsoft yahei";
+      color: #666;
+      margin-right: 10px; }
+    .personalInfo .headBottom p.status a.error {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: red; }
+      .personalInfo .headBottom p.status a.warning {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #f60; }
+    .personalInfo .headBottom p.status a.normal {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: green; }
+    .personalInfo .headBottom .headBottoml {
+      float: left;
+      width: calc(100% - 90px);
+      width: -webkit-calc(100% - 90px);
+      width: -moz-calc(100% - 90px); }
+      .personalInfo .headBottom .headBottoml p.assets {
+        font-size: 12px;
+        width: 57%;
+        text-align: center; }
+      .personalInfo .headBottom .headBottoml p.account {
+        font-size: 12px;
+        width: 40%;
+        margin-left: 3%;
+        text-align: center; }
+
+.bodymenu ul {
+    width: 100%;
+}
+    .bodymenu ul li {
+        width: 94%;
+        padding: 3%;
+        border-bottom: solid 1px #ccc;
+    }
+        .bodymenu ul li .l i {
+            display: inline-block;
+            text-align: center;
+            width: 30px;
+            font: 16px/30px "microsoft yahei";
+            color: #fff;
+            border-radius: 50%;
+        }
+        .bodymenu ul li .l span {
+            font: 14px/30px "microsoft yahei";
+            color: #333;
+        }
+        .bodymenu ul li .r {
+            font: 14px/30px "microsoft yahei";
+            color: #333;
+        }
+        .bodymenu ul li:nth-last-child(1) {
+            border-bottom: none;
+        }
+    .bodymenu ul .comprehensive i, ul .remind i {
+        background: #007AFF;
+    }
+    .bodymenu ul .achievement i {
+        background: #f60;
+    }
+    .bodymenu ul .settlement i {
+        background: #f60;
+    }
+    .bodymenu ul .better i {
+        background: #f60;
+    }
+    .bodymenu ul .report i {
+        background: #f60;
+    }
+    .bodymenu ul .deal i {
+        background: #f60;
+    }
+    .bodymenu ul .changePsd i, ul .cancellation i {
+        background: #000;
+    }

@@ -1,0 +1,127 @@
+﻿body {
+    position: relative;
+}
+
+    body section {
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: solid 1px #ccc;
+    }
+
+        body section .publishProgress {
+            width: 100%;
+        }
+
+            body section .publishProgress dd {
+                width: 20%;
+                text-align: center;
+            }
+
+                body section .publishProgress dd .icon {
+                    font: 600 14px/20px "microsoft yahei";
+                    color: #CCCCCC;
+                }
+
+                body section .publishProgress dd h4 {
+                    font: 14px/20px "microsoft yahei";
+                    color: #CCCCCC;
+                    text-align: center;
+                }
+
+                body section .publishProgress dd:first h4 {
+                    color: #a7db4c;
+                }
+
+                body section .publishProgress dd.pass .icon {
+                    color: #f60;
+                }
+
+                body section .publishProgress dd.pass h4 {
+                    color: #f60;
+                }
+
+            body section .publishProgress dt {
+                width: 20%;
+                padding-top: 16px;
+            }
+
+                body section .publishProgress dt .progressCenter {
+                    background: #ccc;
+                    height: 10px;
+                }
+
+                body section .publishProgress dt.pass .progressCenter {
+                    background: #f60;
+                }
+.roomSelectUl {
+    overflow-x:auto;
+}
+.roomSelectUl ul {
+    padding: 10px 3%;
+    width: 1000px;
+    height: 70px;
+}
+
+    .roomSelectUl ul li {
+        float: left;
+        position: relative;
+        margin: 5px;
+    }
+
+        .roomSelectUl ul li a {
+            width: 100%;
+            display: block;
+        }
+
+            .roomSelectUl ul li a .roomclass {
+                display: block;
+                width: 60px;
+                height: 70px;
+                margin: 0 auto;
+            }
+            .roomSelectUl ul li a .gou {
+                display: block;
+                width: 24px;
+                height: 24px;
+                margin: 0 auto;
+            }
+            .roomSelectUl ul li a .roomNumber {
+                text-align: center;
+                width: 100%;
+                font: 12px/12px "microsoft yahei";
+                color: #fff;
+                position: absolute;
+                bottom: 3.5px;
+                left: 0;
+            }
+
+            .roomSelectUl ul li a .label {
+                padding: 4px;
+                font: 12px/12px "microsoft yahei";
+                color: #fff;
+                position: absolute;
+                top: -8px;
+                right: -8px;
+            }
+
+body .noRoom {
+    height: 100%;
+    padding-top: 40%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+    body .noRoom p {
+        font: 14px/30px "microsoft yahei";
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    body .noRoom a {
+        display: inline-block;
+        font: 14px/14px "microsoft yahei";
+        color: #f60;
+        padding: 6px 12px;
+        border: solid 1px #f60;
+        border-radius: 4px;
+    }

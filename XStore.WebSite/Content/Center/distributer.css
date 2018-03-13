@@ -1,0 +1,436 @@
+#view {
+  width: 100%;
+  height: -moz-calc(100% - 51px);
+  height: -webkit-calc(100% - 51px);
+  height: calc(100% - 51px);
+  overflow-y: scroll; }
+  #view #roomStatus {
+    width: 100%; }
+    #view #roomStatus .topTitle {
+      width: 94%;
+      padding: 10px 3%; }
+      #view #roomStatus .topTitle img {
+        width: 60px;
+        height: 60px;
+        display: block;
+        border-radius: 50%;
+        margin-right: 10px; }
+      #view #roomStatus .topTitle .disInfo {
+        width: calc(100% - 70px);
+        width: -webkit-calc(100% - 70px);
+        width: -moz-calc(100% - 70px); }
+        #view #roomStatus .topTitle .disInfo h3 {
+          font: 16px/40px "microsoft yahei";
+          color: #000000; }
+        #view #roomStatus .topTitle .disInfo p {
+          font: 12px/20px "microsoft yahei";
+          color: #666; }
+      #view #roomStatus .topTitle .r {
+        background: #ff6600;
+        font: 16px/40px "microsoft yahei";
+        color: #fff;
+        padding: 0 10px;
+        border-radius: 4px; }
+    #view #roomStatus ul {
+      width: 94%;
+      padding: 10px 3%; }
+      #view #roomStatus ul li {
+        float: left;
+        width: 20%;
+        position: relative;
+        margin-bottom: 10px; 
+      }
+        #view #roomStatus ul li img {
+            display: block;
+            width: 80%;
+            margin: 0 auto; 
+        }
+        #view #roomStatus ul li .roomNumber {
+          text-align: center;
+          width: 100%;
+          font: 12px/12px "microsoft yahei";
+          color: #fff;
+          position: absolute;
+          bottom: 3.5px;
+          left: 0; }
+        #view #roomStatus ul li .label {
+          display: none;
+          padding: 4px;
+          border-radius: 50%;
+          font: 12px/12px "microsoft yahei";
+          color: #fff;
+          position: absolute;
+          top: 0px;
+          right: 0px; }
+        #view #roomStatus ul li .offLine {
+          background: #666; }
+        #view #roomStatus ul li .noEquipment {
+          background: #f60; }
+        #view #roomStatus ul li .stop {
+          background: #F12E06; }
+      #view #roomStatus ul li.ofl .offLine {
+        display: block; }
+      #view #roomStatus ul li.nep .noEquipment {
+        display: block; }
+      #view #roomStatus ul li.stp .stop {
+        display: block; }
+  #view #pickUp {
+    width: 100%; }
+    #view #pickUp section {
+      width: 100%;
+      padding: 10px 0;
+      border-bottom: solid 1px #ccc; }
+      #view #pickUp section .publishProgress {
+        width: 100%; }
+        #view #pickUp section .publishProgress dd {
+          width: 20%;
+          text-align: center; }
+          #view #pickUp section .publishProgress dd .icon {
+            font: 600 14px/20px "microsoft yahei";
+            color: #CCCCCC; }
+          #view #pickUp section .publishProgress dd h4 {
+            font: 14px/20px "microsoft yahei";
+            color: #CCCCCC;
+            text-align: center; }
+        #view #pickUp section .publishProgress dd:first h4 {
+          color: #a7db4c; }
+        #view #pickUp section .publishProgress dd.pass .icon {
+          color: #f60; }
+        #view #pickUp section .publishProgress dd.pass h4 {
+          color: #f60; }
+        #view #pickUp section .publishProgress dt {
+          width: 60%;
+          padding-top: 16px; }
+          #view #pickUp section .publishProgress dt .progressCenter {
+            background: #ccc;
+            height: 10px; }
+        #view #pickUp section .publishProgress dt.pass .progressCenter {
+          background: #f60; }
+    #view #pickUp ul {
+      width: 94%;
+      padding: 0 3%; }
+      #view #pickUp ul li {
+        border-bottom: solid 1px #ccc;
+        padding: 10px 3%;
+        width: 94%; }
+        #view #pickUp ul li .imgWrap {
+          margin-right: 10px;
+          width: 40px;
+          height: 40px; }
+          #view #pickUp ul li .imgWrap img {
+            width: 100%;
+            height: 100%;
+            display: block; }
+        #view #pickUp ul li .info h3 {
+          font: 14px/40px "microsoft yahei";
+          color: #666; }
+        #view #pickUp ul li .num {
+          font: 14px/40px "microsoft yahei";
+          color: #666; }
+          #view #pickUp ul li .num span {
+            font: 14px/40px "microsoft yahei";
+            color: #666; }
+    #view #pickUp .btnWrap {
+      width: 94%;
+      padding: 10px 3%; }
+      #view #pickUp .btnWrap .makeSure {
+        display: block;
+        width: 100%;
+        font: 16px/50px "microsoft yahei";
+        color: #fff;
+        text-align: center;
+        background: #FF6600;
+        border-radius: 4px; }
+    #view #pickUp .noTask {
+      display: none;
+      padding-top: 40%;
+      font: 14px/30px "microsoft yahei";
+      color: #666;
+      text-align: center; }
+  #view #disMyself {
+    width: 100%;
+    height: 100%; }
+    #view #disMyself .personalInfo {
+      width: 94%;
+      padding: 3%; }
+      #view #disMyself .personalInfo .headPortrait {
+        text-align: center;
+        width: 80px;
+        font: 40px/80px "microsoft yahei";
+        color: #fff;
+        border-radius: 50%; }
+      #view #disMyself .personalInfo .positinInfo {
+        margin-left: 10px;
+        width: calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+        width: -moz-calc(100% - 90px); }
+        #view #disMyself .personalInfo .positinInfo .market {
+          font: 16px/27px "microsoft yahei";
+          color: #000;
+          height: 80px;
+          width: 40%;
+          text-align: center; }
+          #view #disMyself .personalInfo .positinInfo .market .job, #view #disMyself .personalInfo .positinInfo .market .account {
+            font: 14px/27px "microsoft yahei";
+            color: #333; }
+        #view #disMyself .personalInfo .positinInfo .area {
+          margin-top: 20px;
+          margin-left: 3%;
+          font: 14px/20px "microsoft yahei";
+          color: #666;
+          height: 40px;
+          width: 57%;
+          text-align: center; }
+    #view #disMyself ul {
+      width: 100%; }
+      #view #disMyself ul li {
+        width: 94%;
+        padding: 3%;
+        border-bottom: solid 1px #ccc; }
+        #view #disMyself ul li .l i {
+          display: inline-block;
+          text-align: center;
+          width: 30px;
+          font: 16px/30px "microsoft yahei";
+          color: #fff;
+          border-radius: 50%; }
+        #view #disMyself ul li .l span {
+          font: 14px/30px "microsoft yahei";
+          color: #333; }
+        #view #disMyself ul li .r {
+          font: 14px/30px "microsoft yahei";
+          color: #333; }
+      #view #disMyself ul li:last-child {
+        border-bottom: none; }
+      #view #disMyself ul .deliveryNote i {
+        background: #f60; }
+      #view #disMyself ul .deliveryTask i {
+        background: #f60; }
+      #view #disMyself ul .remind i {
+        background: #007AFF; }
+      #view #disMyself ul .report i {
+        background: #f60; }
+      #view #disMyself ul .deal i {
+        background: #f60; }
+      #view #disMyself ul .changePsd i {
+        background: #000; }
+      #view #disMyself ul .cancellation i {
+        background: #000; }
+  #view #news {
+    width: 100%;
+    height: 100%; }
+    #view #news .histroyNews {
+      width: 94%;
+      padding: 10px 3%;
+      display: block; }
+      #view #news .histroyNews .icon-lishijilu {
+        font: 16px/30px "microsoft yahei";
+        width: 30px;
+        text-align: center;
+        color: #fff;
+        background: #2AC845;
+        border-radius: 50%;
+        margin-right: 10px; }
+      #view #news .histroyNews .des {
+        font: 16px/30px "microsoft yahei";
+        color: #333; }
+      #view #news .histroyNews .icon-gengduo1 {
+        font: 16px/30px "microsoft yahei";
+        color: #333; }
+    #view #news ul {
+      width: 100%; }
+      #view #news ul li {
+        width: 94%;
+        padding: 10px 3%;
+        border-bottom: solid 1px #ccc; }
+        #view #news ul li .newStrip {
+          width: 100%; }
+          #view #news ul li .newStrip .icon-xiaoxi {
+            font: 16px/30px "microsoft yahei";
+            width: 30px;
+            text-align: center;
+            color: #fff;
+            background: #FF6600;
+            border-radius: 50%;
+            margin-right: 10px; }
+          #view #news ul li .newStrip .des {
+            font: 16px/30px "microsoft yahei";
+            color: #333; }
+          #view #news ul li .newStrip .iconChange {
+            font: 16px/30px "microsoft yahei";
+            color: #333; }
+          #view #news ul li .newStrip .icon-gengduo2 {
+            display: none; }
+          #view #news ul li .newStrip .info {
+            font: 16px/30px "microsoft yahei";
+            color: #333;
+            margin-right: 10px; }
+        #view #news ul li dl {
+          display: none;
+          width: 100%;
+          border: solid 1px #ccc;
+          background: #eee;
+          margin-top: 10px; }
+          #view #news ul li dl .conTime, #view #news ul li dl .conInfo {
+            width: 94%;
+            padding: 6px 3%;
+            font: 12px/20px "microsoft yahei";
+            color: #666; }
+      #view #news ul .showContent .newStrip .icon-gengduo1 {
+        display: none; }
+      #view #news ul .showContent .newStrip .icon-gengduo2 {
+        display: block; }
+
+.tip {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 60%; }
+  .tip .tipWrap {
+    width: 100%;
+    text-align: center; }
+    .tip .tipWrap .tipBox {
+      display: inline-block;
+      width: 60%;
+      background: #fff;
+      border: solid 1px #ccc; }
+      .tip .tipWrap .tipBox h3 {
+        width: 100%;
+        text-align: center;
+        font: 16px/60px "microsoft yahei";
+        color: #999;
+        border-bottom: solid 1px #ccc; }
+      .tip .tipWrap .tipBox dl {
+        width: 100%; }
+        .tip .tipWrap .tipBox dl dd {
+          width: 50%;
+          border-right: solid 1px #ccc;
+          box-sizing: border-box;
+          text-align: center;
+          font: 14px/30px "microsoft yahei";
+          color: #999; }
+
+.tips {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 40%;
+  text-align: center; }
+  .tips .tipsContent {
+    display: inline-block;
+    width: 80%;
+    background: #fff; }
+    .tips .tipsContent .tipsTopic {
+      width: 100%;
+      text-align: center;
+      font: 16px/50px "microsoft yahei";
+      color: #000; }
+    .tips .tipsContent p {
+      width: 100%;
+      text-align: center;
+      font: 14px/30px "microsoft yahei";
+      color: #333; }
+    .tips .tipsContent ul {
+      width: 100%; }
+      .tips .tipsContent ul li {
+        width: 50%;
+        text-align: center;
+        font: 16px/40px "microsoft yahei"; }
+      .tips .tipsContent ul .cancel {
+        color: #000; }
+      .tips .tipsContent ul .continue {
+        color: #fff;
+        background: #18E59A; }
+       #view #roomSelectDiv .btnWrap {
+      width: 94%;
+      padding: 10px 3%; }
+      #view #roomSelectDiv .btnWrap .makeSure {
+        display: block;
+        width: 95%;
+        font: 16px/50px "microsoft yahei";
+        color: #fff;
+        bottom:5px;
+
+        text-align: center;
+        background: #FF6600;
+        border-radius: 4px; }
+
+       #view #roomSelectDiv section .publishProgress dt {
+          width: 60%;
+          padding-top: 16px; }
+       #view .roomGoods .btnWrap {
+           clear:both;
+      width: 94%;
+      padding: 10px 3%; }
+      #view .roomGoods  .btnWrap .makeSure {
+        display: inline-block;
+        width: 45%;
+        font: 16px/50px "microsoft yahei";
+        color: #fff;
+        position:fixed;
+        bottom:5px;
+        text-align: center;
+        background: #FF6600;
+        border-radius: 4px; }
+      #view .roomGoods  .btnWrap .finishSure {
+        display:  inline-block;
+        width: 45%;
+        font: 16px/50px "microsoft yahei";
+        color: #fff;
+        position:fixed;
+        bottom:5px;
+
+        text-align: center;
+        background: #FF6600;
+        border-radius: 4px; }
+        #view .roomDetail .btnWrap {
+           clear:both;
+      width: 94%;
+      padding: 10px 3%; }
+      #view .roomDetail  .btnWrap .makeSure {
+        display: inline-block;
+        width: 95%;
+        font: 16px/50px "microsoft yahei";
+        color: #fff;
+        bottom:5px;
+        text-align: center;
+
+        background: #FF6600;
+        border-radius: 4px; }
+
+ /*.roomSelect ul {
+      width: 94%;
+      padding: 10px 3%; }
+       .roomSelect ul li {
+        float: left;
+        width: 20%;
+        position: relative;
+        margin-bottom: 10px; 
+      }
+         .roomSelect ul li .roomclass {
+            display: block;
+            width: 80%;
+            margin: 0 auto; 
+        }
+         .roomSelect ul li .roomNumber {
+          text-align: center;
+          width: 100%;
+         font: 12px/12px "microsoft yahei";
+          color: #fff;
+          position: absolute;
+          bottom: 3.5px;
+          left: 0; }
+         .roomSelect ul li .label {
+          padding: 4px;
+          position: absolute;
+          top: 0px;
+          right: 0px; }*/

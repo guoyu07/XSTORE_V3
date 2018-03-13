@@ -1,0 +1,53 @@
+#backlog ul {
+    width: 100%;
+}
+
+    #backlog ul li {
+        width: 94%;
+        padding: 10px 3%;
+        border-bottom: solid 1px #ccc;
+    }
+
+        #backlog ul li a {
+            width: 100%;
+            display: block;
+        }
+
+            #backlog ul li a .imgWrap {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+            }
+
+                #backlog ul li a .imgWrap img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+
+            #backlog ul li a .info .releaseTime, ul li a .info .releasePlace {
+                font: 12px/30px "microsoft yahei";
+                color: #666;
+            }
+
+            #backlog ul li a .r {
+                font: 12px/60px "microsoft yahei";
+                color: #ff6600;
+            }
+
+.dealContent1Title {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0 15px;
+}
+
+    .dealContent1Title span {
+        line-height: 40px;
+        font-size: 15px;
+    }
+
+.mui-content {
+    background: #fefefe;
+}

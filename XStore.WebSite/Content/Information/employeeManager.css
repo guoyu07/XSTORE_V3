@@ -1,0 +1,58 @@
+.topic {
+  width: 100%; }
+  .topic li {
+    float: left;
+    text-align: center;
+    font: 16px/40px "microsoft yahei";
+    color: #000;
+    width: 20%;
+    margin: 0 2.5%;
+    border-bottom: solid 1px #ffffff; }
+  .topic li.clickOn {
+    color: #f60;
+    border-bottom: solid 1px #f60; }
+
+.main {
+  width: 94%;
+  padding: 10px 3%;
+  height: calc(100% - 73px);
+  height: -webkit-calc(100% - 73px);
+  height: -moz-calc(100% - 73px);
+  overflow-y: auto; }
+   .main .manager{
+    width: 100%; }
+    .main .manager dt {
+      width: 100%;
+      font: 14px/30px "microsoft yahei";
+      color: #000;
+      border-bottom: solid 1px #f60; }
+     .main .manager dd{
+      padding: 10px 0;
+      width: 100%;
+      border-bottom: solid 1px #ccc; }
+     
+     .main .manager dd .link_a{width: 70%;  display:inline-block; }
+    .main .manager dd .modify_a {
+        width: 25%;
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        text-decoration:none;
+
+        padding: 0 6px;
+        border-radius: 4px;
+        font: 14px/30px "microsoft yahei";
+        background: #f60;
+        color: #fff;
+    }
+    .main .manager dd .modify_a a:link{color:#fff;text-decoration:none;}
+    .main .manager dd .modify_a a:visited{color:#fff;text-decoration:none;}
+
+
+     .main .manager dd h3{
+        margin-bottom: 6px;  font-weight:bold;}
+      .main .manager dd p, .main .manager dd h3 {
+        font: 12px/20px "microsoft yahei";
+        color: #666; }
+    .main .manager dd:last-child{
+      border-bottom: none; }

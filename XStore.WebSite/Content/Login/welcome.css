@@ -1,0 +1,135 @@
+﻿html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+    .bottom img {
+        display: block;
+    }
+
+.top, .bottom {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    z-index: 10;
+}
+
+.btnWrap {
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
+}
+
+    .btnWrap .btn {
+        display: inline;
+        font: 18px/24px "microsoft yahei";
+        color: #000;
+        padding: 0 4px;
+        border: solid 1px #000;
+        border-radius: 2px;
+    }
+
+input {
+    width: 30px;
+    height: 30px;
+    background: url(/Content/Images/no-active.png) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+
+    input:checked {
+        background: url(/Content/Images/active.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+label {
+    display: inline-block;
+    font: 18px/30px "microsoft yahei";
+}
+
+p {
+    width: 100%;
+    text-align: center;
+}
+
+    p a {
+        font: 14px/20px "microsoft yahei";
+        color: #ff6600;
+    }
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.tips {
+    display: none;
+    width: 94%;
+    height: 70%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 30% 3%;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.enterFail {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    padding: 10px 0;
+}
+
+html body .tips .enterFail .imgWrap {
+    width: 100%;
+    text-align: center;
+}
+
+html body .tips .enterFail p {
+    word-break: normal;
+    width: 100%;
+    text-align: center;
+    font: 600 20px/40px "microsoft yahei";
+    color: #000;
+}
+
+html body .tips .enterFail .des {
+    width: 100%;
+    text-align: center;
+    font: 14px/30px "microsoft yahei";
+    color: #666;
+    margin-bottom: 10px;
+}
+
+html body .tips .enterFail .okBtn {
+    width: 100%;
+    text-align: center;
+}
+
+    html body .tips .enterFail .okBtn span {
+        display: inline-block;
+        padding: 0 40px;
+        background: #6fa0f6;
+        border-radius: 2px;
+        font: 14px/40px "microsoft yahei";
+        color: #fff;
+    }

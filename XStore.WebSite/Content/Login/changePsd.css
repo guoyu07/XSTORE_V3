@@ -1,0 +1,64 @@
+body {
+  height: 70%;
+  padding-top: 30%; }
+
+.oldPsd, .newPsd, .newPsdRepeat, .name, .tel, .checkCode, .account {
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box; }
+  .oldPsd .wrap, .newPsd .wrap, .newPsdRepeat .wrap, .name .wrap, .tel .wrap, .checkCode .wrap, .account .wrap {
+    border-bottom: solid 1px #CCCCCC;
+    margin-bottom: 20px; }
+    .oldPsd .wrap label, .newPsd .wrap label, .newPsdRepeat .wrap label, .name .wrap label, .tel .wrap label, .checkCode .wrap label, .account .wrap label {
+      width: 30%;
+      font: 14px/30px "microsoft yahei";
+      color: #333; }
+    .oldPsd .wrap input, .newPsd .wrap input, .newPsdRepeat .wrap input, .name .wrap input, .tel .wrap input, .checkCode .wrap input, .account .wrap input {
+      width: 70%;
+      font: 14px/28px "microsoft yahei";
+      border: none;
+      position: relative;
+      top: -1px; }
+
+.checkCode .l {
+  width: calc(100% - 80px);
+  width: -webkit-calc(100% - 80px);
+  width: -moz-calc(100% - 80px); }
+  .checkCode .l input {
+    width: calc(100% - 56px);
+    width: -webkit-calc(100% - 56px);
+    width: -moz-calc(100% - 56px); }
+
+.name span, .tel span {
+  color: #999; }
+
+.btn {
+  width: 80px;
+  text-align: center;
+  background: #007AFF;
+  border-radius: 4px; }
+  .btn a {
+    font: 14px/24px "microsoft yahei";
+    color: #fff; }
+  .btn .getCode {
+    display: block; }
+  .btn .cutDown {
+    display: none; }
+
+.newPsdRepeat {
+  border-bottom: none; }
+
+.btnWrap {
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin-top: 50px; }
+  .btnWrap .changePsdBtn {
+    width: 100%;
+    font: 14px/40px "microsoft yahei";
+    color: #fff;
+    text-align: center;
+    background: #007AFF;
+    border-radius: 2px;
+    border: none;
+    outline: none; }

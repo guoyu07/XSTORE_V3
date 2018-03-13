@@ -1,0 +1,112 @@
+body {
+  background: #e9e9e9; }
+  body .main {
+    width: 100%;
+    height: calc(100% - 47px);
+    height: -webkit-calc(100% - 47px);
+    height: -moz-calc(100% - 47px);
+    overflow: auto; }
+    body .main .imgWrap {
+      width: 100%; }
+      body .main .imgWrap img {
+        width: 100%;
+        display: block; }
+    body .main .pd3 {
+      background: #fff;
+      width: 94%;
+      padding: 0 3%; }
+      body .main .pd3 .goodsName {
+        font: 16px/30px "microsoft yahei";
+        color: #000000; }
+      body .main .pd3 .goodsPrice {
+        font: 16px/30px "microsoft yahei";
+        color: #ff6600; }
+    body .main .des {
+      font: 14px/30px "microsoft yahei";
+      color: #999;
+      border-bottom: solid 1px #ccc; }
+    body .main .goodsInfo {
+      border-top: solid 1px #ccc;
+      margin-top: 10px; }
+      body .main .goodsInfo .topic {
+        font: 16px/30px "microsoft yahei";
+        color: #000000;
+        padding: 10px 0;
+        border-bottom: solid 1px #ccc; }
+        body .main .goodsInfo .topic li {
+          float: left;
+          padding: 0 4px;
+          font: 14px/30px "microsoft yahei";
+          background: #ccc;
+          color: #fff;
+          border-radius: 4px;
+          margin-right: 10px; }
+        body .main .goodsInfo .topic li.clickOn {
+          background: #ff6600; }
+      body .main .goodsInfo .goodsContent {
+        width: 100%; }
+        body .main .goodsInfo .goodsContent dd {
+          display: none;
+          width: 100%; }
+          body .main .goodsInfo .goodsContent dd .remind {
+            width: 100%;
+            width: 94%;
+            padding: 10px 3%; }
+            body .main .goodsInfo .goodsContent dd .remind p {
+              width: 100%;
+              padding: 10px;
+              box-sizing: border-box;
+              border: solid 1px #ff6600;
+              background: #f8f8f8;
+              font: 12px/20px "microsoft yahei";
+              color: #666; }
+          body .main .goodsInfo .goodsContent dd img {
+            width: 100%;
+            display: block; }
+        body .main .goodsInfo .goodsContent dd.showTime {
+          display: block; }
+  body .settlement {
+    width: 100%;
+    background: #fff;
+    border-top: solid 1px #ccc;
+    padding: 4px;
+    box-sizing: border-box; }
+    body .settlement .priceInfo {
+      font: 16px/38px "microsoft yahei";
+      color: #FF6600; }
+    body .settlement .buyBtn, body .settlement .addCart {
+      width: 80px;
+      text-align: center;
+      padding: 4px;
+      font: 12px/30px "microsoft yahei";
+      background: #FF6600;
+      color: #fff;
+      border-radius: 2px; }
+    body .settlement .addCart {
+      background: #e00529;
+      margin-right: 10px; }
+  body .cartLabel {
+    position: fixed;
+    bottom: 70px;
+    right: 3%;
+    border-radius: 50%;
+    width: 10%; }
+    body .cartLabel a {
+      width: 100%;
+      display: block;
+      text-align: right; }
+      body .cartLabel a .circle {
+        border: solid 1px #f60;
+        border-radius: 50%;
+        width: 100%;
+        padding: 4px;
+        box-sizing: border-box; }
+        body .cartLabel a .circle img {
+          display: block;
+          width: 100%; }
+      body .cartLabel a span {
+        padding: 0 4px;
+        font: 12px/20px "microsoft yahei";
+        background: #ff6600;
+        color: #fff;
+        border-radius: 6px; }

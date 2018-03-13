@@ -1,0 +1,84 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.top {
+    width: 100%;
+    background-color: #ff6600;
+}
+
+.tips {
+    color: #fff;
+    font-size: 16px;
+    float: left;
+    width: 60%;
+}
+
+    .tips p {
+        margin-top: 15px;
+        margin-left: 15%;
+    }
+
+.tips-logo {
+    width: 40%;
+    float: left;
+    height: auto;
+}
+
+    .tips-logo img {
+        margin-left: 40%;
+        margin-top: 15px;
+    }
+
+.tips-product {
+    width: 100%;
+    color: orange;
+    margin-top: 15px;
+}
+
+    .tips-product p {
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+
+.middle {
+    width: 100%;
+    background-color: #fff;
+}
+
+    .middle h3 {
+        color: orange;
+        margin-left: 25px;
+        margin: 20px;
+    }
+
+    .middle img {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .middle span {
+        color: red;
+    }
+
+.tips-details {
+    color: orange;
+    text-align: center;
+    width: 80%;
+    border: 1px solid #ff6600;
+    margin: 20px auto;
+}

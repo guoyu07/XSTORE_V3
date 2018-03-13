@@ -1,0 +1,2 @@
+cd/
+sc delete OrderWeiXinPush

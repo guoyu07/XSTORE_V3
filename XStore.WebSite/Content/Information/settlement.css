@@ -1,0 +1,61 @@
+.topic {
+  width: 100%; }
+  .topic li {
+    float: left;
+    text-align: center;
+    font: 16px/40px "microsoft yahei";
+    color: #000;
+    width: 27.3%;
+    margin: 0 3%;
+    border-bottom: solid 1px #ffffff; }
+  .topic li.clickOn {
+    color: #f60;
+    border-bottom: solid 1px #f60; }
+
+.main {
+  width: 100%;
+  height: calc(100% - 41px);
+  height: -webkit-calc(100% - 41px);
+  height: --moz-calc(100% - 41px);
+  overflow-y: auto; }
+  .main .box {
+    width: 100%;}
+    .main .box table {
+      width: 100%; }
+      .main .box table .topic {
+        width: 100%; }
+      .main .box table tr {
+        border-bottom: solid 1px #ccc; }
+      .main .box table th, .main .box table td {
+        text-align: center;
+        font: 14px/30px "microsoft yahei";
+        color: #666; }
+    .main .box dl {
+      width: 94%;
+      padding: 10px 3%;
+      border-bottom: solid 1px #ccc; }
+      .main .box dl dt, .main .box dl dd {
+        font: 14px/30px "microsoft yahei";
+        color: #f60; }
+      .main .box dl dd {
+        margin-right: 10px; }
+    .main .box .settleBtn {
+      /*position: fixed;*/
+      left: 0;
+      /*bottom: 0;*/
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      background: #fff; }
+      .main .box .settleBtn h3 {
+        width: 100%;
+        font: 15px/50px "microsoft yahei";
+        color: #fff;
+        background: #f60;
+        text-align: center; 
+        border-radius:4px;
+      }
+  .main .box1 {
+    display: block; }
+  .main .box2 {
+    padding-bottom: 50px; }

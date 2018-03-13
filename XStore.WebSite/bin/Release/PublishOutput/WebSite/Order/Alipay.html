@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>幸事多私享空间-支付宝支付</title>
+    <link rel="stylesheet" href="/Content/Login/reset.css" />
+
+    <style>
+        .imgWrap {
+            width: 100%;
+            padding-top: 40%;
+            /*display:none;*/
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        form {
+            display: none;
+        }
+
+        .remind_title {
+            font-family: 'Microsoft YaHei';
+            font-size: 14px;
+            margin: 15px auto;
+            text-align: center;
+            font-weight: 400;
+            color: red;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="remind_title">请支付完成后返回微信!!!!</div>
+    <div class="imgWrap">
+        <img src="/Content/Images/payWaiting.png" alt="" />
+    </div>
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+    <script src="/Scripts/Util.js"></script>
+    <script type="text/javascript">
+        function is_weixin() {
+            var money, order;
+            var urlparamStr = location.search;
+            self = Util.Deserialize(urlparamStr);
+            money = self.money;
+            order = self.order;
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                $(".imgWrap").show();
+                var requesturl = '/WebSite/_Ashx/CheckOrderState.ashx';
+                $.ajax({
+                    type: "GET",
+                    url: requesturl,
+                    success: function (response) {
+                        var jsonData = $.parseJSON(response);
+                        if (jsonData.success) {
+                            if (jsonData.pay) {
+                                window.location.href = 'PayWaiting.aspx?OrderNo=' + order;
+                            }
+                        }
+                        else {
+                            console.log("返回不正确");
+                            system_alert(jsonData.message);
+                        }
+                    }
+                });
+            } else {
+                var requesturl = '/WebSite/_Ashx/Alipay.ashx';
+                $.ajax({
+                    url: requesturl,
+                    type: 'post',
+                    dataType: 'text',
+                    async: false,
+                    data: {
+                        amount: money,
+                        orderNo: order
+                    },
+                    success: function (json) {
+                        $('body').html(json)
+                    },
+                    error: function (json) {
+                        console.log('err', json);
+                    }
+
+                })
+            }
+               
+        }
+        is_weixin();
+        $(function () {
+            timeID = setInterval('is_weixin()', 3000); //注意:执行的函数需要加引号,否则会报错的 
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,352 @@
+html {
+  width: 100%;
+  height: 100%; }
+  html body {
+    width: 100%;
+    height: 100%;
+    background: #eee; }
+    html body .banner {
+      width: 80%;
+      padding: 0 10%;
+      background: #FF6600; }
+      html body .banner .l {
+        font: 600 24px/100px "microsoft yahei";
+        color: #fff;
+        display: inline-block; }
+      html body .banner img {
+        margin-top: 20px;
+        width: 80px;
+        height: 60px; }
+    html body .total_money {
+      background: #fff;
+      width: 94%;
+      padding: 0 3%;
+      font: 16px/40px "microsoft yahei";
+      color: #f60;
+      margin-bottom: 10px; }
+    html body .cutDown {
+      background: #fff;
+      width: 94%;
+      padding: 0 3%;
+      border-bottom: solid 1px #ccc; }
+      html body .cutDown .l {
+        font: 16px/40px "microsoft yahei";
+        color: #000000; }
+      html body .cutDown .r {
+        font: 30px/40px "microsoft yahei";
+        color: #ff6600; }
+    html body .menu {
+      background: #fff;
+      width: 94%;
+      padding: 10px 3%;
+      border-bottom: solid 1px #eee; }
+      html body .menu .l {
+        width: 48%;
+        text-align: center;
+        border: solid 1px #FF6600;
+        font: 14px/38px "microsoft yahei";
+        color: #ff6600;
+        border-radius: 2px; }
+      html body .menu .r {
+        width: 48%;
+        text-align: center;
+        background: #FF6600;
+        font: 14px/40px "microsoft yahei";
+        color: #fff;
+        border-radius: 2px;
+        border: none; }
+       html body .menu .c {
+        width: 98%;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+        border: solid 1px #FF6600;
+        font: 14px/38px "microsoft yahei";
+        color: #ff6600;
+        border-radius: 2px; }
+     
+    html body .refund {
+      background: #fff;
+      width: 94%;
+      padding: 10px 3%;
+      margin-bottom: 10px; }
+      html body .refund .refundBTN {
+        width: 100%;
+        font: 14px/40px "microsoft yahei";
+        text-align: center;
+        background: #FF6600;
+        color: #fff;
+        border-radius: 2px; }
+    html body .tel {
+      display: block;
+      background: #fff;
+      width: 94%;
+      padding: 10px 3%; }
+      html body .tel .telWrap {
+        border: solid 1px #FF6600;
+        width: 100%;
+        background: #f8f8f8;
+        text-align: center; }
+        html body .tel .telWrap .telContent {
+          padding: 10px 0;
+          display: inline-block; }
+          html body .tel .telWrap .telContent img {
+            height: 32px;
+            width: 32px;
+            margin-right: 10px; }
+          html body .tel .telWrap .telContent span {
+            font: 14px/32px "microsoft yahei";
+            color: #000; }
+            html body .tel .telWrap .telContent span em {
+              font: 14px/32px "microsoft yahei";
+              color: #4577d0; }
+    html body .problem {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font: 14px/30px "microsoft yahei";
+      color: #ff6600;
+      background: #fff; }
+    html body .remind {
+      background: #fff;
+      width: 94%;
+      padding: 10px 3%;
+      margin-bottom: 10px; }
+      html body .remind p {
+        width: 100%;
+        text-align: center;
+        font: 14px/20px "microsoft yahei";
+        color: #666; }
+    html body .qrcode {
+      width: 100%;
+      background: #fff;
+      text-align: center; }
+      html body .qrcode img {
+        width: 240px; }
+    html body .isRefund {
+      display: none;
+      width: 94%;
+      height: 80%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      padding: 50% 3%;
+      background: rgba(0, 0, 0, 0.7); }
+      html body .isRefund dl {
+        width: 100%;
+        background: #fff; }
+        html body .isRefund dl dd {
+          width: calc(100% - 20px);
+          padding: 10px; }
+          html body .isRefund dl dd a {
+            display: block;
+            font: 14px/50px "microsoft yahei";
+            text-align: center;
+            color: #fff;
+            background: #ff6600;
+            border-radius: 4px; }
+    html body .tips {
+      display: none;
+      width: 94%;
+      height: 80%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      padding: 20% 3%;
+      background: rgba(0, 0, 0, 0.3); }
+      html body .tips li {
+        display: none;
+        width: 100%;
+        height: 60%;
+        background: #fff;
+        padding: 10% 0; }
+        html body .tips li .imgWrap {
+          width: 100%;
+          text-align: center; }
+        html body .tips li p {
+          word-break: normal;
+          width: 100%;
+          text-align: center;
+          font: 600 30px/50px "microsoft yahei";
+          color: #000; }
+        html body .tips li .des {
+          width: 100%;
+          text-align: center;
+          font: 14px/30px "microsoft yahei";
+          color: #666;
+          margin-bottom: 10px; }
+        html body .tips li .okBtn {
+          width: 100%;
+          text-align: center; }
+          html body .tips li .okBtn span {
+            display: inline-block;
+            padding: 0 40px;
+            background: #6fa0f6;
+            border-radius: 2px;
+            font: 14px/40px "microsoft yahei";
+            color: #fff; }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Microsoft YaHei UI';
+}
+
+.box {
+    margin: 20px auto;
+    width: 350px;
+    border: 1px orange solid;
+    min-height: 500px;
+    background-color: #fff;
+}
+
+.top {
+    width: 100%;
+    background-color: #ff6600;
+    min-height: 100px;
+    position: relative;
+}
+
+    .top p {
+        color: #fff;
+        width: 60%;
+        margin-left: 15px;
+        line-height: 80px;
+        font-size: 16px;
+    }
+
+    .top img {
+        position: absolute;
+        margin-left: 70%;
+        margin-top: -60px;
+        width: 50px;
+        height: 50px;
+    }
+
+.middle {
+    margin-top: 12px;
+    background-color: #fff;
+    min-height: 300px;
+    width: 100%;
+}
+
+    .middle img {
+        width: 100%;
+    }
+
+    .middle p {
+        width: 88%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+.middle2 {
+    margin-top: 12px;
+    background-color: #fff;
+    min-height: 150px;
+    width: 100%;
+}
+
+.gif-box {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.middle2 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.middle2 p {
+    width: 88%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.bottom {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 15px;
+    padding: 20px 0;
+}
+
+    .bottom p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+
+/*½ø¶ÈÌõ*/
+.progress-out {
+    position: relative;
+    border: 1px solid #ff6600;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.progress-in {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    border: none;
+    background-color: #ff6600;
+    background-image: linear-gradient(top, #ff6600 0%, #ff6600 40%, #ff6600 100%);
+    background-image: -webkit-linear-gradient(top, #ff6600 0%, #ff6600 40%, #ff6600 100%);
+    background-image: -moz-linear-gradient(top, #ff6600 0%, #ff6600 40%, #ff6600 100%);
+    background-image: -o-linear-gradient(top, #ff6600 0%, #ff6600 40%, #ff6600 100%);
+    background-image: -ms-linear-gradient(top, #ff6600 0%, #ff6600 40%, #ff6600 100%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.direction-left {
+    left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.direction-right {
+    right: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.percent-show {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: orange;
+    text-align: center;
+    z-index: 2;
+}
+
+/*jdt*/
+.jdt {
+    width: 100%;
+}
+
+.restart {
+    display: none;
+    width: 100%;
+    padding-top: 95px;
+}
+
+    .restart button {
+        width: 80%;
+        background-color: #ff6600;
+        padding: 5px 15px;
+        border: 1px solid orange;
+        margin: 20px auto;
+        display: block;
+        color: #fff;
+        cursor: pointer;
+    }

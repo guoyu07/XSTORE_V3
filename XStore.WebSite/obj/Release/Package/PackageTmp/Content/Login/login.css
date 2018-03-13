@@ -1,0 +1,78 @@
+body {
+  background: #ccc;
+  box-sizing: border-box; }
+  body .imgWrap {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px; }
+    body .imgWrap img {
+      width: 30%; }
+  body .password, body .account {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 0 40px;
+    box-sizing: border-box; }
+    body .password input, body .account input {
+      box-sizing: border-box;
+      width: 100%;
+      border: solid 1px #ccc;
+      font: 16px/40px "microsoft yahei";
+      color: #333; }
+  body .password {
+    margin-bottom: 40px; }
+    body .password .displaypswd {
+      width: 20%;
+      background: #88CCCC;
+      color: #000;
+      font: 12px/30px "microsoft yahei";
+    }
+  body .btnWrap {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box; }
+    body .btnWrap .loginBtn {
+      width: 100%;
+      border-radius: 2px;
+      text-align: center;
+      background: #FF6600;
+      color: #fff;
+      font: 18px/60px "microsoft yahei"; }
+  body .tel {
+    display: block;
+    background: #ccc;
+    width: 94%;
+    padding: 10px 3%; }
+    body .tel .telWrap {
+      border: solid 1px #FF6600;
+      width: 100%;
+      background: #f8f8f8;
+      text-align: center; }
+      body .tel .telWrap .telContent {
+        padding: 10px 0;
+        display: inline-block; }
+        body .tel .telWrap .telContent img {
+          height: 32px;
+          width: 32px;
+          margin-right: 10px; }
+        body .tel .telWrap .telContent span {
+          font: 14px/32px "microsoft yahei";
+          color: #000; }
+          body .tel .telWrap .telContent span em {
+            font: 14px/32px "microsoft yahei";
+            color: #4577d0; }
+  body .remind {
+    width: 100%;
+    width: 94%;
+    padding: 10px 3%; }
+    body .remind p {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: solid 1px #ff6600;
+      background: #f8f8f8;
+      font: 12px/20px "microsoft yahei";
+      color: #666; }
